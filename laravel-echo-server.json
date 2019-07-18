@@ -1,0 +1,35 @@
+{
+    "authHost": "https://www.dockerex.com",
+    "authEndpoint": "/broadcasting/auth",
+    "clients": [],
+    "database": "redis",
+    "databaseConfig": {
+        "redis": {
+            "port": "6379",
+            "host": "localhost"
+        },
+        "sqlite": {
+            "databasePath": "/database/laravel-echo-server.sqlite"
+        }
+    },
+    "devMode": true,
+    "host": null,
+    "port": "2083",
+    "protocol": "https",
+    "socketio": {
+    },
+    "sslCertPath": "./storage/certs/ssl.crt/server.crt",
+    "sslKeyPath": "./storage/certs/ssl.key/server.key",
+    "sslCertChainPath": "",
+    "sslPassphrase": "",
+    "subscribers": {
+        "http": true,
+        "redis": true
+    },
+    "apiOriginAllow": {
+        "allowCors": false,
+        "allowOrigin": "",
+        "allowMethods": "",
+        "allowHeaders": ""
+    }
+}
