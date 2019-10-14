@@ -56,20 +56,6 @@ class IndexController extends Controller
         } catch (Exception $e) {
             echo $e->faultstring;
         }
-
-
-        $bilgiler = array(
-            "isim" => "ÖMER", // Isım büyük harflerle yazılmak zorunda
-            "soyisim" => "EVREN", // Soyisim Buyuk harflerle yazılmak zorunda
-            "dogumyili" => "1997",
-            "tcno" => "14284133972"
-        );
-        $sonuc = $this->tcno_dogrula($bilgiler);
-        if ($sonuc == "true") {
-            echo "Doğrulama başarılı";
-        } else {
-            echo "Doğrulama başarısız";
-        }
         */
         $tlExchanges = Exchange::where('currency_selling_name', 'TL')->where('active', true)->orderby('order', 'ASC')->get();
         $exchanges = Exchange::orderby('order', 'ASC')->where('active', true)->get();
