@@ -37,26 +37,6 @@ class IndexController extends Controller
      */
     public function index()
     {
-
-        /*
-        $client = new SoapClient("https://tckimlik.nvi.gov.tr/Service/KPSPublic.asmx?WSDL", array('trace' => 1, 'encoding' => 'UTF-8'));
-        try {
-            $result = $client->TCKimlikNoDogrula([
-                'TCKimlikNo' => '14284133972',
-                'Ad' => 'ÖMER',
-                'Soyad' => 'EVREN',
-                'DogumYili' => '1997'
-            ]);
-            dd($result);
-            if ($result->TCKimlikNoDogrulaResult) {
-                echo 'T.C. Kimlik No Doğru';
-            } else {
-                echo 'T.C. Kimlik No Hatalı';
-            }
-        } catch (Exception $e) {
-            echo $e->faultstring;
-        }
-        */
         $tlExchanges = Exchange::where('currency_selling_name', 'TL')->where('active', true)->orderby('order', 'ASC')->get();
         $exchanges = Exchange::orderby('order', 'ASC')->where('active', true)->get();
         $exchangesGroups = $exchanges->groupBy('currency_selling_id');
