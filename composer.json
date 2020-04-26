@@ -12,12 +12,11 @@
         "anhskohbo/no-captcha": "^3.0",
         "fideloper/proxy": "^4.0",
         "jenssegers/agent": "^2.6",
-        "laravel/framework": "5.7.*",
+        "laravel/framework": "5.8.*",
         "laravel/passport": "^7.1",
         "laravel/tinker": "^1.0",
         "pragmarx/google2fa": "^4.0",
         "predis/predis": "^1.1",
-        "sentry/sentry-laravel": "^0.11.0",
         "simplesoftwareio/simple-qrcode": "^2.0"
     },
     "require-dev": {

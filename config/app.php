@@ -189,7 +189,6 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
-        Sentry\SentryLaravel\SentryLaravelServiceProvider::class,
 
         Laravel\Passport\PassportServiceProvider::class,
 
@@ -245,7 +244,6 @@ return [
 
         'Template' => \App\Http\Controllers\Template\TemplateController::class,
 
-        'Sentry' => Sentry\SentryLaravel\SentryFacade::class,
         'System' => \App\Http\Controllers\System\SystemController::class
 
 
